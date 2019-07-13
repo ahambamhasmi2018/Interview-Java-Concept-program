@@ -19,6 +19,7 @@ public class ForeachJava8 {
 		System.out.println("Printing Map with forEach \n : ");
 		items.forEach((k,v)->System.out.println("Key : " + k + " Value : " + v));
 		items.values().forEach((v)->System.out.println("values : " + v));
+		items.values().forEach((V)->System.out.println(V+":"+V.length()));
 		System.out.println("\nPrinting Map with forEach");
 			}
 }
