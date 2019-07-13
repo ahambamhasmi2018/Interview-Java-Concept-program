@@ -7,6 +7,6 @@ public class SameReturnOverloading{
 	}
 	public static void main(String[] args) {
 		SameReturnOverloading obj = new SameReturnOverloading();
-		System.out.print(obj.getData(12));
+		System.out.print(obj.getData());
 	}
 }
