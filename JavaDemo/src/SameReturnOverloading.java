@@ -5,6 +5,7 @@ public class SameReturnOverloading{
 	public int getData(int A) {
 		return A;
 	}
+	
 	public static void main(String[] args) {
 		SameReturnOverloading obj = new SameReturnOverloading();
 		System.out.print(obj.getData());
