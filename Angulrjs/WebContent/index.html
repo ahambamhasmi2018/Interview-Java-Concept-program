@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta chrset="UTF 8">
+    <title>Event Registration</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+	<h1> Guru99 Global Event | My custome Tag </h1>
+	<div ng-app ="myApp"  ng-controller="myController">
+				<div ng-guru=""/>
+	</div>
+	<script type="text/javascript">
+		var app = angular.module('myApp',[]);
+		app.controller('myController',function($scope){
+			$scope.customeName = "My first cuetome Direcives";
+		});
+		app.directive('ngGuru',function(){
+			return {
+					template : '<div> {{customeName}} </div>'
+				}
+		});
+/* 		app.directive('ngGuru',function(){
+			return {
+					template : '<div> My Custome Directive </div>'
+				}
+		}); */
+	</script>
+</body>
+</html>
